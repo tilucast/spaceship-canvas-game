@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Goldman', cursive !important;
+
+    background-color: black;
+}
+
+#score{
+    position: fixed;
+    margin-left: 15px;
+    margin-top: 10px;
+
+    user-select: none;
+}
+
+#score span{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#modal{
+    display: grid;
+    place-items: center;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    position: fixed;
+
+    color: black;
+}
+
+#modal article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    width: 100%;
+    max-width: 30vw;
+    padding: 10px;
+}
+
+#modal article h1{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#modal article span{
+    font-size: 22px;
+    margin: 14px 0;
+    font-weight: bold;
+}
+
+#modal article button{
+    width: 80%;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(0, 170, 170);
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: all .2s;
+}
+
+#modal article button:hover{
+    filter: brightness(110%);
+}
